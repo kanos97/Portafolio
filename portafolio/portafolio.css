@@ -1,0 +1,432 @@
+*{
+    padding:0;
+    margin:0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+
+body{
+    width: 100vw;
+}
+
+/*NAVBAR*/
+
+nav{
+    max-width: 100vw;
+    background: url(https://www.xtrafondos.com/descargar.php?id=5479&resolucion=1920x1080) ;
+    background-repeat: cover;
+    height: 50px;
+    padding: 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 20px 20px 30px rgb(13, 1, 78);
+}
+
+
+nav>ul{
+    display:flex;
+    width: 30%;
+    height:100%;
+    align-items:center;
+    justify-content: space-evenly;
+    
+    
+}
+nav>ul>li{
+    list-style: none;
+    padding: 5px 10px;
+    border-bottom: 5px solid transparent;
+}
+nav>ul>li>a{
+    text-decoration: none;
+    color:rgb(248, 245, 245);
+    font-size: 1.5rem;
+    font-family: 'Bangers', cursive;
+    padding-right: 5px;
+}
+
+nav>h2{
+    color: rgb(199, 17, 190);
+    font-family: 'Bangers', cursive;
+    width: 110px;
+    font-size: 35px;
+}
+li :hover{
+    border-right: chartreuse inset 3px;
+    border-bottom: 4px inset rgb(172, 5, 223);
+    cursor: pointer;
+    transition: all 2s linear ease-out ;
+}
+
+#animacion{
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    background-color: black;
+    animation-name: cambiardecolor;
+    animation-duration: 4s;
+    animation-delay: 2s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+@keyframes cambiardecolor{
+    0%{
+        background-color: white;
+        transform: translate(0,0);
+    }
+    30%{
+        background-color: yellowgreen;
+    }
+    50%{
+        background-color: red;
+        border-radius: 5%;
+    }
+    70%{
+        background-color: hotpink;
+    }
+    100%{
+        background-color: green;
+        transform: translate(200px,200px);
+    }
+}
+
+#texto{
+    text-transform: uppercase;
+    position: relative;
+    font-weight: bold;
+    border-right: 3px solid black;
+    margin-top: 200px;
+    width: 1.2ch;
+    font-size: 5rem;
+    overflow: hidden;
+    white-space: nowrap;
+    animation: escribir 5s steps(30) infinite, cursor 0.5s step-end infinite ;
+}
+
+@keyframes escribir{
+    0%{
+        width: 0;
+    }
+    100%{
+        width: 48ch;
+    }
+}
+
+@keyframes cursor{
+    50%{
+        border-color: transparent;
+    }
+}
+
+/*CONTENIDO*/
+
+#contenedor{
+    width: 100%;
+    height: 400px;
+    display: flex;
+    background: url(Celdas\ moradas\ y\ azules_xtrafondos.com.jpg);
+    background-size: cover;
+    background-color: rgb(150, 150, 211);
+    box-shadow: 1px 10px 10px rgb(180, 180, 243);
+    justify-content: center;
+    align-items: center;
+    gap: 30px;   
+}
+
+@media only screen and (max-width: 600px){
+
+    nav>ul{
+        margin-left: 50px;
+        width: 50%;
+    }
+
+    nav>h2{
+        font-size: 28px;
+        border-left: solid white 2px;
+        padding-left: 5px;
+        -webkit-text-stroke: 0.01px rgb(40, 40, 46);
+    }
+
+    #contenedor{
+        flex-direction: column;
+        height: 600px;
+        gap: 10px;
+    }
+
+    #contenedor_2{
+        flex-direction: column;
+        justify-content: center;
+        margin-top: 20px;
+    }
+
+    #widget-4{
+        gap: 10px;
+        margin-left: 10px;
+    margin-top: 10px;
+    }
+    #html{
+        width: 100%;
+    }
+    #css{
+        width: 100%;
+    }
+    #js{
+        width: 100%;
+    }
+    #boot{
+        width: 100%;
+    }
+    #cmas{
+        width: 100%;
+    }
+    #ado{
+        width: 100%;
+    }
+}
+
+
+
+
+#widget-1{
+    width: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#widget-1 > img{
+    width: 100%;
+    border-radius: 500px;
+}
+
+#widget-2{
+    width: 300px;
+    display: flex;
+    justify-content: center;
+}
+
+
+#widget-2 > div > h2{
+
+    font-size:20px;
+    font-family:'Merienda', cursive;
+    padding-left: 30px;
+    color: rgb(248, 245, 245);
+    -webkit-text-stroke: 0.01px black;
+}
+
+#widget-2 > div > h1{
+    font-size:50px;
+    font-family: 'Bangers', cursive;
+    color: rgb(28, 196, 247);
+    -webkit-text-stroke: 0.01px black;
+}
+
+#widget-2 > div > h3{
+
+    font-size:30px;
+    font-family: 'Yellowtail', cursive;
+    color: rgb(248, 245, 245);
+    -webkit-text-stroke: 0.1px black;
+}
+
+#contenedor_2{
+    margin-top: 30px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    align-items: center;
+}
+
+
+#widget-3{
+    padding-left: 20px;
+    font-family: 'Yellowtail', cursive;
+    align-items: center;
+    width: 90%;
+    
+    
+}
+
+
+#widget-3 > h2{
+    font-size: 50px;
+    font-family: 'Bangers', cursive;
+    color: rgb(191, 38, 221);
+    -webkit-text-stroke: 0.01px black;
+    
+}
+
+#widget-3 > p{
+    font-size: 25px;
+    text-align: center;
+}
+
+#widget-3 > button{
+    margin-left: 25%;
+    background: rgb(28, 196, 247);
+    height: 30px;
+    width: 200px;
+}
+
+#widget-4{
+    padding-left: 10px;
+    border-left:rgb(13, 1, 78) 5px solid;
+    width: 90%;
+    display: grid;
+    grid-template-columns: repeat(3,33.3%) ;
+    grid-template-rows: repeat(3,1fr);
+    grid-template-areas: "h1 h1 h1 "
+                        "html css js "
+                        "boot cmas ado ";
+    font-size: 30px;
+    align-items: center;
+    gap: 10px;
+}
+
+#widget-4 > h1{
+    width: 80%;
+    grid-area: h1;
+    font-family: 'Bangers', cursive;
+    color: rgb(191, 38, 221);
+    -webkit-text-stroke: 0.1px rgb(9, 7, 15);
+}
+
+#html{
+    
+    height: 100px;
+    grid-area: html; 
+}
+
+#css{
+    height: 100px;
+    grid-area: css;
+}
+
+#js{
+    height: 100px;
+    grid-area: js;
+}
+
+#boot{
+    height: 100px;
+    grid-area: boot;
+}
+
+#cmas{
+    height: 100px;
+    grid-area: cmas;
+}
+
+#ado{
+    height: 100px;
+    grid-area: cmas;
+}
+
+#title{
+    font-size: 50px;
+    font-family: 'Bangers', cursive;
+    color: rgb(191, 38, 221);
+    -webkit-text-stroke: 0.01px black;
+    padding-left: 10px;
+}
+
+#contenedor_3{
+    width: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    height: 350px;
+    
+}
+
+
+#widget-5{
+    width: 350px;
+    height: 250px;
+    position: relative;
+    overflow: hidden;
+    border-radius: 20px;
+    box-shadow: 10px 15px 25px rgb(110, 105, 105);
+}
+
+#widget-5 > img{
+    width: 100%;
+    height: 100%;
+    transition: all 500ms ease-out;
+}
+
+.capa{
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 103, 123, 0.6);
+    transition: all 500ms ease-out;
+    opacity: 0;
+    visibility: hidden;
+    text-align: center;
+}
+
+#widget-5:hover > .capa{
+    opacity: 1;
+    visibility: visible;
+}
+
+#widget-5:hover > .capa > h3{
+    margin-top: 70px;
+    margin-bottom: 15px;
+
+}
+
+.capa > h3{
+    color: white;
+    font-weight: 400;
+    transition: all 500ms ease-out;
+}
+
+.capa > p{
+    color: white;
+    font-size: 15px;
+    line-height: 1.5;
+    width: 100%;
+    margin: auto;
+}
+
+
+#widget-6 > form{
+    width: 300px;
+    margin: auto;
+    background: rgba(86, 8, 230, 0.4);
+    padding: 10px 20px;
+    box-sizing: border-box;
+    margin-top: 20px;
+    border-radius: 10px;
+}
+
+#widget-6 > form > input,textarea{
+    width: 100%;
+    margin-bottom: 20px;
+    padding: 7px;
+    box-sizing: border-box;
+    border: none;
+}
+
+#widget-6 > form > textarea{
+    min-height: 100px;
+    min-height: 200px;
+}
+
+#widget-6 > form > button{
+    background: rgb(28, 196, 247);
+    color: #fff;
+    padding: 20px;
+}
+
+#widget-6 > form > button:hover{
+cursor: pointer;
+}
